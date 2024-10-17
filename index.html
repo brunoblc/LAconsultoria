@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina Bruno.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">Sobre</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Trabalhos</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Entre em Contato</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>L. A. Infinity</h1>
+        <h3>Identidade visual e soluções digitais para impulsionar sua marca, negócio e crescimento.</h3>
+        <h2>Desenvolvimento/ Business Intelligence(B.I)/ Prototipagens/ Infraestrutura/ Gerenciamento e Gestão</h2>
+        <div class="accordion">
+            <div class="accordion-item1" data-id="1">
+                <div class="accordion-title" onclick="toggleAccordion(this)">
+                    <h3>+ Seu site, seu espaço.</h3>
+                </div>
+                <div class="accordion-content">
+                    <h2>Mostre tudo o que você oferece, em um único lugar.</h2>
+                    <p>
+                        Desenvolvemos uma página personalizada que inclui conteúdos como vídeos, fotos, informações, agenda, valores e respostas às dúvidas dos clientes. E com anúncios, garantimos que seu site seja encontrado por quem busca exatamente o que você oferece.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item2" data-id="2">
+                <div class="accordion-title" onclick="toggleAccordion(this)">
+                    <h3>+ Decisões Baseadas em Dados</h3>
+                </div>
+                <div class="accordion-content">
+                    <h2>Maximize Seus Resultados</h2>
+                    <p>
+                        Muitos profissionais perdem oportunidades valiosas por não analisarem seus dados de compras, investimentos, lucros e despesas de forma adequada.
+Nós ajudamos você a tomar o controle dos seus dados financeiros e operacionais, transformando informações dispersas em insights claros e acionáveis.
+Deixe os dados trabalharem a seu favor para decisões mais inteligentes e resultados superiores.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item3" data-id="3">
+                <div class="accordion-title" onclick="toggleAccordion(this)">
+                    <h3>+ Gestão Eficiente, Operações Excelentes</h3>
+                </div>
+                <div class="accordion-content">
+                    <h2>Gestão Eficiente, Operações Excelentes</h2>
+                    <p>
+                        Traga mais eficiência para sua empresa com nossa gestão de compras, controle de infraestrutura tecnológica e otimização de processos.
+De equipamentos a fluxos de trabalho, oferecemos um suporte completo para tornar suas operações mais ágeis e bem-sucedidas.
+                    </p>
+                </div>
+            </div>
+        </div>
+          
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Veja meus trabalhos.</h1>
+        <section>
+            <p><strong>Veja alguns exemplos de produtos e serviços:</strong><br>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiYTZlMjIzMjgtZGQ5Zi00NTAxLTlkMDctY2MwNmYwYjhiYTAwIiwidCI6IjIzMTg2YmQ0LTA1ZTQtNGE4ZC1hNTU5LWVlMTU1YzAxNDU2ZSJ9&pageName=ReportSection" target="_blank"><button class="btn_one">Modelo de B.I</button></a>
+                <a href="https://brunoblc.github.io/siteAVCBDebora/" target="_blank"><button class="btn_one">Modelo de Sites</button></a>
+                <a href="https://priscila-mariano.github.io/frutaefruto/" target="_blank"><button class="btn_one">+ Modelo de Sites</button></a>
+                <a href="https://www.figma.com/proto/PUExKiLbYn4uvtUhENA0Dr/Portif%C3%B3lio---Evolu%C3%A7%C3%A3o-de-projetos?page-id=4%3A7009&node-id=4-10739&viewport=395%2C331%2C0.1&t=nnr8s5DiCRQWppFv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4%3A10689&show-proto-sidebar=1" target="_blank"><button class="btn_one">Modelo de Protótipos</button></a>
+            <h2>Sobre Tudo</h2>
+            <p><strong>Gerenciamento e coordenação de atividades de serviços:</strong><br>
+                Liderança no gerenciamento e coordenação de atividades essenciais para garantir operações eficientes e integradas.</p>
+                
+                <p><strong>Criação de protótipos navegáveis:</strong><br>
+                Desenvolvimento de protótipos interativos de alta, média e baixa fidelidade, otimizando o design e a experiência do usuário.</p>
+                
+                <p><strong>Desenvolvimento de páginas responsivas:</strong><br>
+                Construção de páginas para dispositivos móveis e desktops, proporcionando uma experiência fluida e adaptável em qualquer tela.</p>
+                
+                <p><strong>Soluções em software e web:</strong><br>
+                Desenvolvimento de programas e soluções personalizadas, atendendo às necessidades específicas de cada projeto e cliente.</p>
+                
+                <p><strong>Criação de dashboards para data analytics:</strong><br>
+                Construção de painéis de dados que oferecem insights valiosos e suporte à tomada de decisões informadas e estratégicas.</p>
+                
+                <p><strong>Controle e gerenciamento operacional:</strong><br>
+                Supervisão abrangente de máquinas, produtos e operações humanas, assegurando a eficiência e continuidade das operações.</p>
+                
+                <ul>
+                  <li><strong>Gerenciamento do parque de máquinas:</strong> Monitoramento e controle de ativos de tecnologia para garantir desempenho ideal.</li>
+                  <li><strong>Sustentação de softwares e suporte aos usuários:</strong> Manutenção e suporte contínuos para assegurar a confiabilidade dos sistemas.</li>
+                  <li><strong>Recuperação e manutenção:</strong> Práticas proativas para reparo, atualização e preservação de sistemas críticos.</li>
+                  <li><strong>Disponibilidade e acesso seguro:</strong> Garantia de acessos individualizados e seguros, conforme as necessidades operacionais.</li>
+                </ul>
+                
+                Liderança no gerenciamento e coordenação de atividades essenciais para garantir operações eficientes e integradas.</p>
+                
+                <p><strong>Criação de protótipos navegáveis:</strong><br>
+                Desenvolvimento de protótipos interativos de alta, média e baixa fidelidade, otimizando o design e a experiência do usuário.</p>
+                
+                <p><strong>Desenvolvimento de páginas responsivas:</strong><br>
+                Construção de páginas para dispositivos móveis e desktops, proporcionando uma experiência fluida e adaptável em qualquer tela.</p>
+                
+                <p><strong>Soluções em software e web:</strong><br>
+                Desenvolvimento de programas e soluções personalizadas, atendendo às necessidades específicas de cada projeto e cliente.</p>
+                
+                <p><strong>Criação de dashboards para data analytics:</strong><br>
+                Construção de painéis de dados que oferecem insights valiosos e suporte à tomada de decisões informadas e estratégicas.</p>
+                
+                <p><strong>Controle e gerenciamento operacional:</strong><br>
+                Supervisão abrangente de máquinas, produtos e operações humanas, assegurando a eficiência e continuidade das operações.</p>
+                
+                <ul>
+                  <li><strong>Gerenciamento do parque de máquinas:</strong> Monitoramento e controle de ativos de tecnologia para garantir desempenho ideal.</li>
+                  <li><strong>Sustentação de softwares e suporte aos usuários:</strong> Manutenção e suporte contínuos para assegurar a confiabilidade dos sistemas.</li>
+                  <li><strong>Recuperação e manutenção:</strong> Práticas proativas para reparo, atualização e preservação de sistemas críticos.</li>
+                  <li><strong>Disponibilidade e acesso seguro:</strong> Garantia de acessos individualizados e seguros, conforme as necessidades operacionais.</li>
+                </ul>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>Sobre</h1>
+            <section>
+                <h2>Um pouco sobre nós</h2>
+                <p>
+                    Somos um time especializado em unir tecnologia e criatividade para ajudar empresas e profissionais independentes a construírem e consolidarem sua presença digital. <br>
+                    Com experiência em atender desde clientes internacionais até startups locais, temos o conhecimento necessário para impulsionar sua marca no ambiente online. <br>
+                    Atuamos em diversas áreas, incluindo restaurantes, escolas, empresas de administração, e também ajudamos profissionais autônomos a estabelecerem uma identidade forte e única na web. <br>
+                    Oferecemos soluções para armazenamento e compartilhamento seguro de informações, controle de acessos e infraestrutura flexível, seja física ou virtual, com foco na eficiência e redução de custos. <br>
+                    Nossa equipe é composta por designers, engenheiros de software, consultores de analytics e desenvolvedores fullstack, prontos para transformar suas ideias em realidade e ampliar seu alcance digital.
+                </p>
+                
+                <section>
+                    <h2>Soft & Hard Skills</h2>
+                    <p>Estudos, Formações e Tecnologias</p>
+                    <ul>
+                        <li>Gestão de TI e Desenvolvimento de Software</li>
+                        <li>Arquitetura e Design de Sistemas</li>
+                        <li>Gestão de Projetos</li>
+                        <li>Desenvolvimento e Criação de Games</li>
+                        <li>MBA em Gestão de Projetos Ágeis</li>
+                        <li>MBA em UX/UI e Experiência Digital</li>
+                    </ul>
+                    
+                    <p>Certificações</p>
+                    <ul>
+                        <li>PSM I</li>
+                        <li>ETH</li>
+                        <li>ITIL</li>
+                        <li>SFC</li>
+                        <li>SFPC</li>
+                    </ul>
+                    
+                    <p>Idiomas</p>
+                    <ul>
+                        <li>Inglês</li>
+                        <li>Espanhol</li>
+                    </ul>
+                </section>
+                
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML & CSS</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;JavaScript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;SQL</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Power BI</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;C#</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Figma</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Photoshop</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Infraestrutura</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Redes</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Linux</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Excel</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Segurança da Informação</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Gestão de Processos</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Gestão de Projetos</div>
+                </div>
+            </section>
+        </div>
+                <div id="contact_container" class="container">
+                    <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+                    <h1>Minhas redes.</h1>
+                    <section>
+                        <h2>Onde me achar: </h2>
+                        <p>
+                            <tr>
+                                <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.linkedin.com/in/blcavalcante/" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                                <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://github.com/brunoblc" target="_blank"><i class="fab fa-github"></i></a>
+                                </td>
+                            </tr>
+                        </p>
+                    </section>
+                </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
