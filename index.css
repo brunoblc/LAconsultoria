@@ -34,6 +34,13 @@ body {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
+
+img {
+    align-self: center;
+    width: 350px;
+    margin: 40px;
+}
+
 #box {
     width:100vw;
     height:100vh;
@@ -192,14 +199,13 @@ body {
 
 .container div {
     font-size:25px;
-    margin:20px 0px;
     transition:0.4s ease-in-out;
 }
 .container div:hover {
     cursor:pointer;
 }
 .container section {
-    margin:8vh 0px;
+    margin:2vh 0px;
 }
 #used div{
     font-size:14px !important;
@@ -417,9 +423,9 @@ body {
 .accordion-content {
     display: none;
     padding: 15px;
-    background-color: #f9f9f9; 
+    background-color: #dbcfcf15; 
     font-size: 16px;
-    color: #333;
+    color: #f5eded;
     line-height: 1.6;  
     max-height: 150px; /* Limita a altura máxima */
     overflow-y: auto;  /* Adiciona barra de rolagem vertical */
@@ -515,6 +521,11 @@ body {
     #middle table {
         width:80%;
     }
+    img {
+        align-self: center;
+        width: 250px;
+        margin: 40px;
+    }    
     .container form input {
         width:90%;
     }
@@ -532,5 +543,127 @@ body {
     }
     #box div {
         width:100%;
+    }
+    h1 {
+        font-size: 14px;
+    }
+    .container h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 18px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 30px;
+    }
+
+    h3{
+        font-size: 16px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .btn_one {
+        font-size: 14px;
+    }
+    .container p{
+        font-size: 14px;
+    }
+    .accordion {
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .accordion-title {
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .accordion-content {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        max-height: 200px; 
+        overflow-y: auto;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .animated.fadeIn {
+        animation: fadeIn 1s ease forwards;
+    }
+
+    .animated.slideInDown {
+        animation: slideInDown 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInDown {
+        0% {
+            transform: translateY(-10px); /* Menor deslocamento para telas menores */
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    #about, #work, #contact {
+        font-size: 18px; /* Ajuste no tamanho da fonte para telas menores */
+        padding: 4px 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .accordion-title {
+        font-size: 12px;
+        padding: 8px;
+        height: auto;
+    }
+
+    .accordion-content {
+        font-size: 12px;
+        padding: 8px;
+        max-height: 150px; /* Reduz a altura máxima para caber melhor */
+    }
+    .animated.fadeIn {
+        animation: fadeIn 0.8s ease forwards; /* Animação mais rápida em telas menores */
+    }
+
+    .animated.slideInDown {
+        animation: slideInDown 0.8s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInDown {
+        0% {
+            transform: translateY(-5px); /* Deslocamento menor para telas muito pequenas */
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    #about, #work, #contact {
+        font-size: 16px; /* Tamanho de fonte ajustado para telas menores */
+        padding: 3px 3px;
     }
 }
