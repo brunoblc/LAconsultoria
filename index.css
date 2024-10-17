@@ -524,7 +524,7 @@ img {
     img {
         align-self: center;
         width: 250px;
-        margin: 40px;
+        margin: 40px 0px 0px 0px;
     }    
     .container form input {
         width:90%;
@@ -623,10 +623,19 @@ img {
 }
 
 @media (max-width: 480px) {
+    img {
+        align-self: center;
+        width: 250px;
+        margin: 90px 0px 0px 0px;
+    }  
     .accordion-title {
         font-size: 12px;
         padding: 8px;
         height: auto;
+    }
+
+    .accordion h2{
+        font-size: 14px;
     }
 
     .accordion-content {
