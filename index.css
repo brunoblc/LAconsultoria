@@ -705,11 +705,17 @@ img {
     h2 {
         font-size: 16px;
         margin: 20px;
-        text-align: center;
+        text-align: start;
     }
 
     h3{
         font-size: 14px;
+    }
+
+    .btn_one{
+        width: 100%;
+        font-size: 14px;
+        margin: 15px 0px 15px 0px;
     }
 
     .img-seta {
@@ -757,6 +763,6 @@ img {
     }
 
     .container p{
-        text-align: center;
+        text-align: start;
     }
 }
