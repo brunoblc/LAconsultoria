@@ -69,3 +69,11 @@ function toggleAccordion(element) {
         content.classList.add('active');
     }
 }
+
+function showPopup() {
+    document.getElementById("popup_container").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popup_container").style.display = "none";
+}
